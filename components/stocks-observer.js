@@ -36,13 +36,15 @@ function StocksObserver() {
       <p class="card-title">Stocks Observer</p>
 
       <StyledImageRow>
-        <Image
-          src="/images/stocks-observer/home.png"
-          width={400}
-          height={225}
-          alt="Stocks Observer Home"
-          onClick={handleHomeShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/stocks-observer/home.png"
+            width={175}
+            height={225}
+            alt="Stocks Observer Home"
+            onClick={handleHomeShow}
+          />
+        </div>
         <Modal
           isOpen={showHome}
           onRequestClose={handleHomeClose}
@@ -51,19 +53,20 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/home.png"
-            width={400}
+            width={175}
             height={225}
             alt="Stocks Observer Home"
           />
         </Modal>
-
-        <Image
-          src="/images/stocks-observer/TSLA_desc.png"
-          width={400}
-          height={225}
-          alt="Stocks Observer Description Example"
-          onClick={handleDescShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/stocks-observer/TSLA_desc.png"
+            width={175}
+            height={225}
+            alt="Stocks Observer Description Example"
+            onClick={handleDescShow}
+          />
+        </div>
         <Modal
           isOpen={showDesc}
           onRequestClose={handleDescClose}
@@ -72,19 +75,20 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/TSLA_desc.png"
-            width={400}
+            width={175}
             height={225}
             alt="Stocks Observer Description Example"
           />
         </Modal>
-
-        <Image
-          src="/images/stocks-observer/TSLA_graphs.png"
-          width={400}
-          height={225}
-          alt="Stocks Observer Graphs Example"
-          onClick={handleGraphsShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/stocks-observer/TSLA_graphs.png"
+            width={175}
+            height={225}
+            alt="Stocks Observer Graphs Example"
+            onClick={handleGraphsShow}
+          />
+        </div>
         <Modal
           isOpen={showGraphs}
           onRequestClose={handleGraphsClose}
@@ -93,7 +97,7 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/TSLA_graphs.png"
-            width={400}
+            width={175}
             height={225}
             alt="Stocks Observer Graphs Example"
           />
@@ -105,9 +109,11 @@ function StocksObserver() {
         and uses the Volley library to send HTTP requests to multiple third
         party APIs.
       </p>
-      <a href="https://github.com/elijahbocz/stocks-observer">
-        Source on GitHub
-      </a>
+      <div className="links">
+        <a href="https://github.com/elijahbocz/stocks-observer">
+          Source on GitHub
+        </a>
+      </div>
     </StyledCard>
   );
 }

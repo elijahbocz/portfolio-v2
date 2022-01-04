@@ -6,7 +6,6 @@ import Header from "./header";
 
 const StyledFooter = styled.footer`
   margin: 1rem;
-  text-align: center;
 
   a:hover {
     opacity: 0.75;

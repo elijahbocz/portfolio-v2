@@ -36,13 +36,16 @@ function ExchangeTracker() {
       <p class="card-title">Exchange Tracker</p>
 
       <StyledImageRow>
-        <Image
-          src="/images/exchange-tracker/dashboard.png"
-          width={400}
-          height={225}
-          alt="Exchange Tracker Dashboard"
-          onClick={handleDashboardShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/exchange-tracker/dashboard.png"
+            width={400}
+            height={225}
+            className="test-img"
+            alt="Exchange Tracker Dashboard"
+            onClick={handleDashboardShow}
+          />
+        </div>
         <Modal
           isOpen={showDashboard}
           onRequestClose={handleDashboardClose}
@@ -56,14 +59,15 @@ function ExchangeTracker() {
             alt="Exchange Tracker Dashboard"
           />
         </Modal>
-
-        <Image
-          src="/images/exchange-tracker/new_coin.png"
-          width={400}
-          height={225}
-          alt="Exchange Tracker New Coin"
-          onClick={handleNewCoinShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/exchange-tracker/new_coin.png"
+            width={400}
+            height={225}
+            alt="Exchange Tracker New Coin"
+            onClick={handleNewCoinShow}
+          />
+        </div>
         <Modal
           isOpen={showNewCoin}
           onRequestClose={handleNewCoinClose}
@@ -77,14 +81,15 @@ function ExchangeTracker() {
             alt="Exchange Tracker New Coin"
           />
         </Modal>
-
-        <Image
-          src="/images/exchange-tracker/delete_coin.png"
-          width={400}
-          height={225}
-          alt="Exchange Tracker Delete"
-          onClick={handleDeleteShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/exchange-tracker/delete.png"
+            width={400}
+            height={225}
+            alt="Exchange Tracker Delete"
+            onClick={handleDeleteShow}
+          />
+        </div>
         <Modal
           isOpen={showDelete}
           onRequestClose={handleDeleteClose}
@@ -92,7 +97,7 @@ function ExchangeTracker() {
           style={customStyles}
         >
           <Image
-            src="/images/exchange-tracker/delete_coin.png"
+            src="/images/exchange-tracker/delete.png"
             width={400}
             height={225}
             alt="Exchange Tracker Delete"
@@ -108,10 +113,12 @@ function ExchangeTracker() {
         Components. The site itself is deployed on an Ubuntu VM with
         DigitalOcean using Nginx as the web server.
       </p>
-      <a href="https://github.com/elijahbocz/exchange-tracker">
-        Source on GitHub
-      </a>
-      <a href="https://exchangetracker.net">Live Site</a>
+      <div className="links">
+        <a href="https://github.com/elijahbocz/exchange-tracker">
+          Source on GitHub
+        </a>
+        <a href="https://exchangetracker.net">Live Site</a>
+      </div>
     </StyledCard>
   );
 }

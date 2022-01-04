@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const StyledImageRow = styled.div`
   display: flex;
@@ -18,6 +18,10 @@ const StyledImageRow = styled.div`
     margin: auto;
   }
 
+  .img-container {
+    margin: 0 0.5rem;
+  }
+
   @media (max-width: 768px) {
     display: block;
 
@@ -25,6 +29,6 @@ const StyledImageRow = styled.div`
       margin: 0.75rem;
     }
   }
-`
+`;
 
-export default StyledImageRow
+export default StyledImageRow;

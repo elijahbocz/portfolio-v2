@@ -22,27 +22,22 @@ const StyledCard = styled.div`
   a:focus {
     border-bottom: 1px solid #3D59AB;
   }
-
+  
   .card-title {
     font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .links {
+    text-align: center;
   }
 
   @media (max-width: 1058px) {
     margin: 0.66rem;
-
-    .last-img {
-      width: 252.3px;
-      height: 141.917px;
-    }
    }
 
   @media (max-width: 768px) {
    margin: 0.66rem;
-
-   .last-img {
-     width: 306px;
-     height: 196px;
-   }
   }
 `
 

@@ -9,12 +9,8 @@ import FoodSaver from "../components/food-saver";
 import StocksObserver from "../components/stocks-observer";
 
 const StyledContent = styled.div`
-  text-align: center;
-
-  @media (max-width: 768px) {
-    #about-me {
-      margin: 1rem;
-    }
+  h2 {
+    text-align: center;
   }
 
   a {
@@ -29,6 +25,16 @@ const StyledContent = styled.div`
 
   a:focus {
     border-bottom: 1px solid #3D59AB;
+  }
+
+  #about-me {
+    margin: 0 1.33rem;
+  }
+
+  @media (max-width: 768px) {
+    #about-me {
+      margin: 1rem;
+    }
   }
 `;
 
@@ -52,7 +58,7 @@ export default function Home() {
       <Layout>
         <StyledContent>
           <div id="about-me">
-            I'm Elijah Bocz, an aspiring software engineer. I will be graduating
+            I'm Elijah Bocz, an aspiring software engineer. I graduated
             in fall 2021 with a Bachelor's of Science in Computer Science from
             Georgia State University.
           </div>

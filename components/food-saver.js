@@ -35,13 +35,15 @@ function FoodSaver() {
     <StyledCard>
       <p class="card-title">Food Saver</p>
       <StyledImageRow>
-        <Image
-          src="/images/food-saver/submissions.png"
-          width={175}
-          height={225}
-          alt="Food Saver Submissions Example"
-          onClick={handleSubmissionsShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/food-saver/submissions.png"
+            width={175}
+            height={225}
+            alt="Food Saver Submissions Example"
+            onClick={handleSubmissionsShow}
+          />
+        </div>
         <Modal
           isOpen={showSubmissions}
           onRequestClose={handleSubmissionsClose}
@@ -55,14 +57,15 @@ function FoodSaver() {
             alt="Food Saver Submissions Example"
           />
         </Modal>
-
-        <Image
-          src="/images/food-saver/owner_submission.png"
-          width={400}
-          height={225}
-          alt="Food Saver Owner Submission"
-          onClick={handleOwnerSubmissionShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/food-saver/owner_submission.png"
+            width={175}
+            height={225}
+            alt="Food Saver Owner Submission"
+            onClick={handleOwnerSubmissionShow}
+          />
+        </div>
         <Modal
           isOpen={showOwnerSubmission}
           onRequestClose={handleOwnerSubmissionClose}
@@ -76,14 +79,15 @@ function FoodSaver() {
             alt="Food Saver Owner Submission"
           />
         </Modal>
-
-        <Image
-          src="/images/food-saver/submission_claimed.png"
-          width={175}
-          height={225}
-          alt="Food Saver Submission Claimed"
-          onClick={handleSubmissionClaimedShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/food-saver/submission_claimed.png"
+            width={175}
+            height={225}
+            alt="Food Saver Submission Claimed"
+            onClick={handleSubmissionClaimedShow}
+          />
+        </div>
         <Modal
           isOpen={showSubmissionClaimed}
           onRequestClose={handleSubmissionClaimedClose}
@@ -104,7 +108,9 @@ function FoodSaver() {
         else in need. The application is built with Java, and Google Firebase is
         used for storage of data as well as user authentication.
       </p>
-      <a href="https://github.com/elijahbocz/CTW-Group3">Source on GitHub</a>
+      <div className="links">
+        <a href="https://github.com/elijahbocz/CTW-Group3">Source on GitHub</a>
+      </div>
     </StyledCard>
   );
 }

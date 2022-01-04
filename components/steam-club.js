@@ -35,13 +35,15 @@ function SteamClub() {
       <p class="card-title">The STEAM Club Report Generator</p>
 
       <StyledImageRow>
-        <Image
-          src="/images/steam-club/search.png"
-          width={400}
-          height={225}
-          alt="The STEAM Club Report Search"
-          onClick={handleSTEAMShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/steam-club/search.png"
+            width={400}
+            height={225}
+            alt="The STEAM Club Report Search"
+            onClick={handleSTEAMShow}
+          />
+        </div>
         <Modal
           isOpen={showSTEAM}
           onRequestClose={handleSTEAMClose}
@@ -56,14 +58,15 @@ function SteamClub() {
             alt="The STEAM Club Report Search"
           />
         </Modal>
-
-        <Image
-          src="/images/steam-club/roster.png"
-          width={400}
-          height={225}
-          alt="The STEAM Club Report Search"
-          onClick={handleSTEAM1Show}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/steam-club/roster.png"
+            width={400}
+            height={225}
+            alt="The STEAM Club Report Search"
+            onClick={handleSTEAM1Show}
+          />
+        </div>
         <Modal
           isOpen={showSTEAM1}
           onRequestClose={handleSTEAM1Close}
@@ -77,14 +80,15 @@ function SteamClub() {
             alt="The STEAM Club Report Search"
           />
         </Modal>
-
-        <Image
-          src="/images/steam-club/roster_pdf.png"
-          width={400}
-          height={225}
-          alt="The STEAM Club Report Search"
-          onClick={handleSTEAM2Show}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/steam-club/roster_pdf.png"
+            width={400}
+            height={225}
+            alt="The STEAM Club Report Search"
+            onClick={handleSTEAM2Show}
+          />
+        </div>
         <Modal
           isOpen={showSTEAM2}
           onRequestClose={handleSTEAM2Close}

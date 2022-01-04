@@ -35,13 +35,15 @@ function ArtistPortfolio() {
     <StyledCard>
       <p className="card-title">Artist Portfolio</p>
       <StyledImageRow>
-        <Image
-          src="/images/artist-portfolio/home.png"
-          width={400}
-          height={225}
-          alt="Artist Portfolio Home"
-          onClick={handleHomeShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/artist-portfolio/home.png"
+            width={400}
+            height={225}
+            alt="Artist Portfolio Home"
+            onClick={handleHomeShow}
+          />
+        </div>
         <Modal
           isOpen={showHome}
           onRequestClose={handleHomeClose}
@@ -55,14 +57,15 @@ function ArtistPortfolio() {
             alt="Artist Portfolio Home"
           />
         </Modal>
-
-        <Image
-          src="/images/artist-portfolio/gallery.png"
-          width={400}
-          height={225}
-          alt="Artist Portfolio Gallery"
-          onClick={handleGalleryShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/artist-portfolio/gallery.png"
+            width={400}
+            height={225}
+            alt="Artist Portfolio Gallery"
+            onClick={handleGalleryShow}
+          />
+        </div>
         <Modal
           isOpen={showGallery}
           onRequestClose={handleGalleryClose}
@@ -76,15 +79,15 @@ function ArtistPortfolio() {
             alt="Artist Portfolio Gallery"
           />
         </Modal>
-
-        <Image
-          src="/images/artist-portfolio/CMS.png"
-          width={400}
-          height={225}
-          className="last-img"
-          alt="Artist Portfolio CMS"
-          onClick={handleCMSShow}
-        />
+        <div className="img-container">
+          <Image
+            src="/images/artist-portfolio/CMS.png"
+            width={400}
+            height={225}
+            alt="Artist Portfolio CMS"
+            onClick={handleCMSShow}
+          />
+        </div>
         <Modal
           isOpen={showCMS}
           onRequestClose={handleCMSClose}
@@ -105,12 +108,14 @@ function ArtistPortfolio() {
         Components, images are hosted on Cloudinary CDN, and the site is
         deployed on Netlify.
       </p>
-      <a href="https://github.com/elijahbocz/artist-portfolio">
-        Source on GitHub
-      </a>
-      <a href="https://artist-portfolio-by-elijahbocz.netlify.app/">
-        Live Site
-      </a>
+      <div className="links">
+        <a href="https://github.com/elijahbocz/artist-portfolio">
+          Source on GitHub
+        </a>
+        <a href="https://artist-portfolio-by-elijahbocz.netlify.app/">
+          Live Site
+        </a>
+      </div>
     </StyledCard>
   );
 }
