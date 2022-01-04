@@ -33,7 +33,7 @@ function StocksObserver() {
 
   return (
     <StyledCard>
-      <p class="card-title">Stocks Observer</p>
+      <p className="card-title">Stocks Observer</p>
 
       <StyledImageRow>
         <div className="img-container">

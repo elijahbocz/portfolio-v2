@@ -33,7 +33,7 @@ function ExchangeTracker() {
 
   return (
     <StyledCard>
-      <p class="card-title">Exchange Tracker</p>
+      <p className="card-title">Exchange Tracker</p>
 
       <StyledImageRow>
         <div className="img-container">
@@ -54,14 +54,14 @@ function ExchangeTracker() {
         >
           <Image
             src="/images/exchange-tracker/dashboard.png"
-            width={400}
-            height={225}
+            width={800}
+            height={600}
             alt="Exchange Tracker Dashboard"
           />
         </Modal>
         <div className="img-container">
           <Image
-            src="/images/exchange-tracker/new_coin.png"
+            src="/images/exchange-tracker/new.png"
             width={400}
             height={225}
             alt="Exchange Tracker New Coin"
@@ -75,9 +75,9 @@ function ExchangeTracker() {
           style={customStyles}
         >
           <Image
-            src="/images/exchange-tracker/new_coin.png"
-            width={400}
-            height={225}
+            src="/images/exchange-tracker/new.png"
+            width={800}
+            height={600}
             alt="Exchange Tracker New Coin"
           />
         </Modal>
@@ -98,8 +98,8 @@ function ExchangeTracker() {
         >
           <Image
             src="/images/exchange-tracker/delete.png"
-            width={400}
-            height={225}
+            width={800}
+            height={600}
             alt="Exchange Tracker Delete"
           />
         </Modal>

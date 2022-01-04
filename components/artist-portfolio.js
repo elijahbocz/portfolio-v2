@@ -52,8 +52,8 @@ function ArtistPortfolio() {
         >
           <Image
             src="/images/artist-portfolio/home.png"
-            width={400}
-            height={225}
+            width={800}
+            height={600}
             alt="Artist Portfolio Home"
           />
         </Modal>
@@ -74,14 +74,14 @@ function ArtistPortfolio() {
         >
           <Image
             src="/images/artist-portfolio/gallery.png"
-            width={400}
-            height={225}
+            width={800}
+            height={600}
             alt="Artist Portfolio Gallery"
           />
         </Modal>
         <div className="img-container">
           <Image
-            src="/images/artist-portfolio/CMS.png"
+            src="/images/artist-portfolio/cms.png"
             width={400}
             height={225}
             alt="Artist Portfolio CMS"
@@ -95,9 +95,9 @@ function ArtistPortfolio() {
           style={customStyles}
         >
           <Image
-            src="/images/artist-portfolio/CMS.png"
-            width={400}
-            height={225}
+            src="/images/artist-portfolio/cms.png"
+            width={800}
+            height={600}
             alt="Artist Portfolio CMS"
           />
         </Modal>

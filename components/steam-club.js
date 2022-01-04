@@ -32,7 +32,7 @@ function SteamClub() {
   const handleSTEAM2Show = () => setShowSTEAM2(true);
   return (
     <StyledCard>
-      <p class="card-title">The STEAM Club Report Generator</p>
+      <p className="card-title">The STEAM Club Report Generator</p>
 
       <StyledImageRow>
         <div className="img-container">
@@ -52,8 +52,8 @@ function SteamClub() {
         >
           <Image
             src="/images/steam-club/search.png"
-            width={400}
-            height={225}
+            width={800}
+            height={600}
             formats={["auto", "webp", "avif"]}
             alt="The STEAM Club Report Search"
           />
@@ -75,8 +75,8 @@ function SteamClub() {
         >
           <Image
             src="/images/steam-club/roster.png"
-            width={400}
-            height={225}
+            width={800}
+            height={600}
             alt="The STEAM Club Report Search"
           />
         </Modal>
@@ -97,8 +97,8 @@ function SteamClub() {
         >
           <Image
             src="/images/steam-club/roster_pdf.png"
-            width={400}
-            height={225}
+            width={800}
+            height={600}
             alt="The STEAM Club Report Search"
           />
         </Modal>

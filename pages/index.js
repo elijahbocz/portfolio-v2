@@ -28,11 +28,13 @@ const StyledContent = styled.div`
   }
 
   #about-me {
-    margin: 0 1.33rem;
+    text-align: center;
+    margin: 0 1rem;
   }
 
   @media (max-width: 768px) {
     #about-me {
+      text-align: left;
       margin: 1rem;
     }
   }

@@ -33,7 +33,7 @@ function FoodSaver() {
 
   return (
     <StyledCard>
-      <p class="card-title">Food Saver</p>
+      <p className="card-title">Food Saver</p>
       <StyledImageRow>
         <div className="img-container">
           <Image
