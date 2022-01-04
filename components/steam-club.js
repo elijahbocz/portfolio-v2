@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Modal from "react-modal";
 
+import StyledCard from "./styled/card";
+import StyledImageRow from "./styled/image-row";
+
 const customStyles = {
   content: {
     top: "50%",
@@ -27,85 +30,75 @@ function SteamClub() {
   const [showSTEAM2, setShowSTEAM2] = useState(false);
   const handleSTEAM2Close = () => setShowSTEAM2(false);
   const handleSTEAM2Show = () => setShowSTEAM2(true);
-
   return (
-    <div>
-      <p className="card-title">The STEAM Club Report Generator</p>
+    <StyledCard>
+      <p class="card-title">The STEAM Club Report Generator</p>
 
-      <Image
-        src="/images/steam-club/search.png"
-        quality={95}
-        width={400}
-        height={225}
-        formats={["auto", "webp", "avif"]}
-        alt="The STEAM Club Report Search"
-        onClick={handleSTEAMShow}
-      />
-      <Modal
-        isOpen={showSTEAM}
-        onRequestClose={handleSTEAMClose}
-        contentLabel="The STEAM Club Search"
-        style={customStyles}
-      >
+      <StyledImageRow>
         <Image
           src="/images/steam-club/search.png"
-          quality={95}
           width={400}
           height={225}
-          formats={["auto", "webp", "avif"]}
           alt="The STEAM Club Report Search"
+          onClick={handleSTEAMShow}
         />
-      </Modal>
+        <Modal
+          isOpen={showSTEAM}
+          onRequestClose={handleSTEAMClose}
+          contentLabel="The STEAM Club Search"
+          style={customStyles}
+        >
+          <Image
+            src="/images/steam-club/search.png"
+            width={400}
+            height={225}
+            formats={["auto", "webp", "avif"]}
+            alt="The STEAM Club Report Search"
+          />
+        </Modal>
 
-      <Image
-        src="/images/steam-club/roster.png"
-        quality={95}
-        width={400}
-        height={225}
-        formats={["auto", "webp", "avif"]}
-        alt="The STEAM Club Report Search"
-        onClick={handleSTEAM1Show}
-      />
-      <Modal
-        isOpen={showSTEAM1}
-        onRequestClose={handleSTEAM1Close}
-        contentLabel="The STEAM Club Roster"
-        style={customStyles}
-      >
         <Image
           src="/images/steam-club/roster.png"
-          quality={95}
           width={400}
           height={225}
-          formats={["auto", "webp", "avif"]}
           alt="The STEAM Club Report Search"
+          onClick={handleSTEAM1Show}
         />
-      </Modal>
+        <Modal
+          isOpen={showSTEAM1}
+          onRequestClose={handleSTEAM1Close}
+          contentLabel="The STEAM Club Roster"
+          style={customStyles}
+        >
+          <Image
+            src="/images/steam-club/roster.png"
+            width={400}
+            height={225}
+            alt="The STEAM Club Report Search"
+          />
+        </Modal>
 
-      <Image
-        src="/images/steam-club/roster_pdf.png"
-        quality={95}
-        width={400}
-        height={225}
-        formats={["auto", "webp", "avif"]}
-        alt="The STEAM Club Report Search"
-        onClick={handleSTEAM2Show}
-      />
-      <Modal
-        isOpen={showSTEAM2}
-        onRequestClose={handleSTEAM2Close}
-        contentLabel="The STEAM Club PDF"
-        style={customStyles}
-      >
         <Image
           src="/images/steam-club/roster_pdf.png"
-          quality={95}
           width={400}
           height={225}
-          formats={["auto", "webp", "avif"]}
           alt="The STEAM Club Report Search"
+          onClick={handleSTEAM2Show}
         />
-      </Modal>
+        <Modal
+          isOpen={showSTEAM2}
+          onRequestClose={handleSTEAM2Close}
+          contentLabel="The STEAM Club PDF"
+          style={customStyles}
+        >
+          <Image
+            src="/images/steam-club/roster_pdf.png"
+            width={400}
+            height={225}
+            alt="The STEAM Club Report Search"
+          />
+        </Modal>
+      </StyledImageRow>
       <p>
         Optimized report generation for administrators of The STEAM Club
         classes. It’s a Python Flask web application that uses a third party
@@ -113,7 +106,7 @@ function SteamClub() {
         stores it in a MySQL database. Deployed on an Ubuntu VM with
         DigitalOcean using Nginx as the web server.
       </p>
-    </div>
+    </StyledCard>
   );
 }
 
