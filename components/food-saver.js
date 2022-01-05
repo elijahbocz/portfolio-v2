@@ -52,8 +52,8 @@ function FoodSaver() {
         >
           <Image
             src="/images/food-saver/submissions.png"
-            width={412}
-            height={732}
+            width={393}
+            height={851}
             alt="Food Saver Submissions Example"
           />
         </Modal>
@@ -74,8 +74,8 @@ function FoodSaver() {
         >
           <Image
             src="/images/food-saver/owner_submission.png"
-            width={412}
-            height={732}
+            width={393}
+            height={851}
             alt="Food Saver Owner Submission"
           />
         </Modal>
@@ -96,8 +96,8 @@ function FoodSaver() {
         >
           <Image
             src="/images/food-saver/submission_claimed.png"
-            width={412}
-            height={732}
+            width={393}
+            height={851}
             alt="Food Saver Submission Claimed"
           />
         </Modal>

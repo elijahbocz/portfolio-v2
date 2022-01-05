@@ -53,8 +53,8 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/home.png"
-            width={412}
-            height={732}
+            width={393}
+            height={851}
             alt="Stocks Observer Home"
           />
         </Modal>
@@ -75,8 +75,8 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/TSLA_desc.png"
-            width={412}
-            height={732}
+            width={393}
+            height={851}
             alt="Stocks Observer Description Example"
           />
         </Modal>
@@ -97,8 +97,8 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/TSLA_graphs.png"
-            width={412}
-            height={732}
+            width={393}
+            height={851}
             alt="Stocks Observer Graphs Example"
           />
         </Modal>
