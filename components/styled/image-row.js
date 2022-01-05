@@ -36,7 +36,7 @@ const StyledImageRow = styled.div`
 
   @media (max-width: 768px) {
     display: block;
-
+    text-align: center;
     img {
       margin: 0.75rem;
     }
