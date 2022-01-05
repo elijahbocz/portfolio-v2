@@ -37,28 +37,6 @@ function FoodSaver() {
       <StyledImageRow>
         <div className="img-container">
           <Image
-            src="/images/food-saver/submissions.png"
-            width={175}
-            height={300}
-            alt="Food Saver Submissions Example"
-            onClick={handleSubmissionsShow}
-          />
-        </div>
-        <Modal
-          isOpen={showSubmissions}
-          onRequestClose={handleSubmissionsClose}
-          contentLabel="Exchange Tracker Dashboard"
-          style={customStyles}
-        >
-          <Image
-            src="/images/food-saver/submissions.png"
-            width={393}
-            height={851}
-            alt="Food Saver Submissions Example"
-          />
-        </Modal>
-        <div className="img-container">
-          <Image
             src="/images/food-saver/owner_submission.png"
             width={175}
             height={300}
@@ -77,6 +55,28 @@ function FoodSaver() {
             width={393}
             height={851}
             alt="Food Saver Owner Submission"
+          />
+        </Modal>
+        <div className="img-container">
+          <Image
+            src="/images/food-saver/submissions.png"
+            width={175}
+            height={300}
+            alt="Food Saver Submissions Example"
+            onClick={handleSubmissionsShow}
+          />
+        </div>
+        <Modal
+          isOpen={showSubmissions}
+          onRequestClose={handleSubmissionsClose}
+          contentLabel="Exchange Tracker Dashboard"
+          style={customStyles}
+        >
+          <Image
+            src="/images/food-saver/submissions.png"
+            width={393}
+            height={851}
+            alt="Food Saver Submissions Example"
           />
         </Modal>
         <div className="img-container">

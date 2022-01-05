@@ -72,7 +72,7 @@ function ArtistPortfolio() {
           contentLabel="Artist Portfolio Gallery"
           style={customStyles}
         >
-          <Image
+          <img
             src="/images/artist-portfolio/gallery.png"
             width={1366}
             height={768}
