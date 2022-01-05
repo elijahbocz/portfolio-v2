@@ -54,8 +54,8 @@ function ExchangeTracker() {
         >
           <Image
             src="/images/exchange-tracker/dashboard.png"
-            width={800}
-            height={600}
+            width={1366}
+            height={768}
             alt="Exchange Tracker Dashboard"
           />
         </Modal>
@@ -76,8 +76,8 @@ function ExchangeTracker() {
         >
           <Image
             src="/images/exchange-tracker/new.png"
-            width={800}
-            height={600}
+            width={1366}
+            height={768}
             alt="Exchange Tracker New Coin"
           />
         </Modal>
@@ -98,8 +98,8 @@ function ExchangeTracker() {
         >
           <Image
             src="/images/exchange-tracker/delete.png"
-            width={800}
-            height={600}
+            width={1366}
+            height={768}
             alt="Exchange Tracker Delete"
           />
         </Modal>

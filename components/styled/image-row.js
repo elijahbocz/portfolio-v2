@@ -22,6 +22,18 @@ const StyledImageRow = styled.div`
     margin: 0 0.5rem;
   }
 
+  .modal-img-container {
+    height: 1366px;
+    width: 768px;
+  }
+
+  @media (max-width: 1008px) {
+    .modal-img-container {
+      height: 600px;
+      width: 500px;
+    }
+  }
+
   @media (max-width: 768px) {
     display: block;
 

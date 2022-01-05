@@ -52,8 +52,8 @@ function SteamClub() {
         >
           <Image
             src="/images/steam-club/search.png"
-            width={800}
-            height={600}
+            width={1366}
+            height={768}
             formats={["auto", "webp", "avif"]}
             alt="The STEAM Club Report Search"
           />
@@ -75,8 +75,8 @@ function SteamClub() {
         >
           <Image
             src="/images/steam-club/roster.png"
-            width={800}
-            height={600}
+            width={1366}
+            height={768}
             alt="The STEAM Club Report Search"
           />
         </Modal>
@@ -97,8 +97,8 @@ function SteamClub() {
         >
           <Image
             src="/images/steam-club/roster_pdf.png"
-            width={800}
-            height={600}
+            width={1366}
+            height={768}
             alt="The STEAM Club Report Search"
           />
         </Modal>

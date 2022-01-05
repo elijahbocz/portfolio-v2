@@ -40,7 +40,7 @@ function StocksObserver() {
           <Image
             src="/images/stocks-observer/home.png"
             width={175}
-            height={225}
+            height={300}
             alt="Stocks Observer Home"
             onClick={handleHomeShow}
           />
@@ -53,8 +53,8 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/home.png"
-            width={175}
-            height={225}
+            width={412}
+            height={732}
             alt="Stocks Observer Home"
           />
         </Modal>
@@ -62,7 +62,7 @@ function StocksObserver() {
           <Image
             src="/images/stocks-observer/TSLA_desc.png"
             width={175}
-            height={225}
+            height={300}
             alt="Stocks Observer Description Example"
             onClick={handleDescShow}
           />
@@ -75,8 +75,8 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/TSLA_desc.png"
-            width={175}
-            height={225}
+            width={412}
+            height={732}
             alt="Stocks Observer Description Example"
           />
         </Modal>
@@ -84,7 +84,7 @@ function StocksObserver() {
           <Image
             src="/images/stocks-observer/TSLA_graphs.png"
             width={175}
-            height={225}
+            height={300}
             alt="Stocks Observer Graphs Example"
             onClick={handleGraphsShow}
           />
@@ -97,8 +97,8 @@ function StocksObserver() {
         >
           <Image
             src="/images/stocks-observer/TSLA_graphs.png"
-            width={175}
-            height={225}
+            width={412}
+            height={732}
             alt="Stocks Observer Graphs Example"
           />
         </Modal>
